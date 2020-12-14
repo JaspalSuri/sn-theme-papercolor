@@ -3,7 +3,7 @@
   "name": "Papercolor",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "1.2.1",
+  "version": "1.0.0",
   "description": "A Papercolor inspired theme for Standard Notes",
   "url": "http://localhost:8001/dist/dist.css",
   "latest_url": "http://localhost:8001/sn-theme-papercolor.json",
