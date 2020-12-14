@@ -86,10 +86,10 @@
 
 /* title bar */
 #desktop-title-bar {
-  background-color: #444444 !important;
+  background-color: #5fafd7 !important;
 }
 #desktop-title-bar button {
-  color: #eeeeee;
+  color: #444444;
 }
 
 /* background for append editor */
