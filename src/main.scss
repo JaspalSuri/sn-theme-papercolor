@@ -58,10 +58,19 @@
   --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
 
   /* Titlebar */
-  --sn-desktop-titlebar-bg-color: var(var(--foreground-color-2));
-  --sn-desktop-titlebar-border-color: var(--border-color);
+  --sn-desktop-titlebar-bg-color: var(--foreground-color-2);
+  --sn-desktop-titlebar-border-color: #444444;
   --sn-desktop-titlebar-ui-color: var(--highlight-color);
   --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
+  
+}
+
+.title-bar-left-buttons {
+  color: #eeeeee;
+
+}
+.title-bar-right-buttons {
+  color: #eeeeee;
 }
 
 /* Notes column */
@@ -70,11 +79,15 @@
   color: #444444;
 }
 
-.note.selected {
+.note.ng-scope.selected {
   background-color: #005f87;
   color: #eeeeee;
 }
 
 #notes-column {
   background-color: #bcbcbc;
+}
+
+#tags-column {
+  background-color:#878787;
 }
