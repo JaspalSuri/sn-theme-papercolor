@@ -55,19 +55,7 @@
 
   /* Scrollbar */
   --sn-stylekit-scrollbar-track-border-color: #878787;
-  --sn-stylekit-scrollbar-thumb-color: #0087af;
-
-  /* Titlebar */
-  --sn-desktop-titlebar-bg-color: #005faf;
-  --sn-desktop-titlebar-border-color: #444444;
-  --sn-desktop-titlebar-ui-color: #eeeeee;
-  --sn-desktop-titlebar-ui-hover-color: #d70087;
-
-  --sn-stylekit-titlebar-bg-color: #005faf;
-  --sn-stylekit-titlebar-border-color: #444444;
-  --sn-stylekit-titlebar-ui-color: #eeeeee;
-  --sn-stylekit-titlebar-ui-hover-color: #d70087;
-  
+  --sn-stylekit-scrollbar-thumb-color: #0087af;  
 }
 
 
@@ -87,11 +75,21 @@
 .note.ng-scope.selected .date.faded{
   color: #eeeeee;
 }
-
 #notes-column {
   background-color: #bcbcbc;
 }
 
+/* Tags column */
 #tags-column {
   background-color:#d9d9d9;
+}
+
+/* title bar */
+#desktop-title-bar {
+  background-color: #005faf !important;
+}
+
+/* background for append editor */
+#content {
+  background-color: #f2f2f2;
 }
