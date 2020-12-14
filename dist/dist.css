@@ -55,13 +55,18 @@
 
   /* Scrollbar */
   --sn-stylekit-scrollbar-track-border-color: #878787;
-  --sn-stylekit-scrollbar-thumb-color: #8700af;
+  --sn-stylekit-scrollbar-thumb-color: #0087af;
 
   /* Titlebar */
   --sn-desktop-titlebar-bg-color: #005faf;
   --sn-desktop-titlebar-border-color: #444444;
   --sn-desktop-titlebar-ui-color: #eeeeee;
   --sn-desktop-titlebar-ui-hover-color: #d70087;
+
+  --sn-stylekit-titlebar-bg-color: #005faf;
+  --sn-stylekit-titlebar-border-color: #444444;
+  --sn-stylekit-titlebar-ui-color: #eeeeee;
+  --sn-stylekit-titlebar-ui-hover-color: #d70087;
   
 }
 
