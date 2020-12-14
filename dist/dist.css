@@ -50,7 +50,7 @@
   --sn-stylekit-shadow-color: #bcbcbc;
 
   /* Editor */
-  --sn-stylekit-editor-background-color: #eeeeee;
+  --sn-stylekit-editor-background-color: #f2f2f2;
   --sn-stylekit-editor-foreground-color: #444444;
 
   /* Scrollbar */
@@ -67,7 +67,6 @@
 
 
 /* Notes column */
-
 .notes {
   color: #444444;
 }
@@ -89,19 +88,5 @@
 }
 
 #tags-column {
-  background-color:#bcbcbc;
-}
-
-/* Folder circles */
-.sk-button.info:before {
-  background-color: #d70087;
-}
-.sk-button.info:after {
-  color: #d70087;
-}
-.sk-button.success:before {
-  background-color: #0087af;
-}
-.sk-button.success:after {
-  color: #0087af;
+  background-color:#d9d9d9;
 }
