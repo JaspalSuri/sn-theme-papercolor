@@ -1,12 +1,12 @@
 :root {
   
   /* Color definitions */
-  --background-1: #21222c;
-  --background-2: #343746;
-  --foreground-color-1: #f8f8f2;
-  --foreground-color-2: #bd93f9;
-  --foreground-color-3: #8be9fd;
-  --border-color: #21222c;
+  --background-1: #eeeeee;
+  --background-2: #bcbcbc;
+  --foreground-color-1: #444444;
+  --foreground-color-2: #005f87;
+  --foreground-color-3: #0087af;
+  --border-color: #d75f00;
   --highlight-color: #6272a4;
   --highlight-contrast: #21222c;
 
@@ -17,13 +17,13 @@
   --sn-stylekit-neutral-color: var(--foreground-color-2);
   --sn-stylekit-neutral-contrast-color: #21222c;
 
-  --sn-stylekit-success-color: #50fa7b;
+  --sn-stylekit-success-color: #008700;
   --sn-stylekit-success-contrast-color: #21222c;
 
-  --sn-stylekit-warning-color: #f1fa8c;
+  --sn-stylekit-warning-color: #d70087;
   --sn-stylekit-warning-contrast-color: #21222c;
 
-  --sn-stylekit-danger-color: #ff5555;
+  --sn-stylekit-danger-color: #af0000;
   --sn-stylekit-danger-contrast-color: #21222c;
 
   /* Backgrounds */
