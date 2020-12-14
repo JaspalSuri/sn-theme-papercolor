@@ -78,9 +78,17 @@
 .notes {
   color: #444444;
 }
-
+/* Selected note color */
 .note.ng-scope.selected {
   background-color: #005f87;
+}
+.note.ng-scope.selected .name{
+  color: #eeeeee;
+}
+.note.ng-scope.selected .note-preview{
+  color: #eeeeee;
+}
+.note.ng-scope.selected .date.faded{
   color: #eeeeee;
 }
 
@@ -89,5 +97,10 @@
 }
 
 #tags-column {
-  background-color:#878787;
+  background-color:#bcbcbc;
+}
+
+/* Desktop title bar */
+#desktop-title-bar {
+  background-color: var(--foreground-color-2);
 }
