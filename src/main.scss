@@ -6,7 +6,7 @@
   --foreground-color-1: #444444;
   --foreground-color-2: #005f87;
   --foreground-color-3: #0087af;
-  --border-color: #d75f00;
+  --border-color: #444444;
   --highlight-color: #d70087;
   --highlight-contrast: #444444;
 
@@ -29,19 +29,19 @@
   /* Backgrounds */
   --sn-stylekit-background-color: var(--background-1);
   --sn-stylekit-foreground-color: var(--foreground-color-1);
-  --sn-stylekit-contrast-background-color: var(--background-2);
-  --sn-stylekit-contrast-foreground-color: var(--foreground-color-1);
+  --sn-stylekit-contrast-background-color: #005f87;
+  --sn-stylekit-contrast-foreground-color: #eeeeee;
 
-  --sn-stylekit-secondary-background-color: var(--background-1);
+  /* --sn-stylekit-secondary-background-color: var(--background-1);
   --sn-stylekit-secondary-foreground-color: var(--foreground-color-1);
   --sn-stylekit-secondary-contrast-background-color: var(--background-2);
-  --sn-stylekit-secondary-contrast-foreground-color: var(--foreground-color-1);
+  --sn-stylekit-secondary-contrast-foreground-color: var(--foreground-color-1); */
 
   /* Borders */
   --sn-stylekit-border-color: var(--border-color);
-  --sn-stylekit-contrast-border-color: var(--border-color);
+  --sn-stylekit-contrast-border-color: #d75f00;
   --sn-stylekit-secondary-border-color: var(--border-color);
-  --sn-stylekit-secondary-contrast-border-color: var(--border-color);
+  --sn-stylekit-secondary-contrast-border-color: #d75f00;
   
   /* Paragraph */
   --sn-stylekit-paragraph-text-color: var(--foreground-color-1);
@@ -65,20 +65,12 @@
   
 }
 
-.title-bar-left-buttons {
-  color: #eeeeee;
-
-}
-.title-bar-right-buttons {
-  color: #eeeeee;
-}
 
 /* Notes column */
 
 .notes {
   color: #444444;
 }
-/* Selected note color */
 .note.ng-scope.selected {
   background-color: #005f87;
 }
@@ -100,7 +92,13 @@
   background-color:#bcbcbc;
 }
 
-/* Desktop title bar */
-#desktop-title-bar {
-  background-color: var(--foreground-color-2);
+/* Folder circles */
+
+.sk-circle.small.info {
+  background-color: #d70087;
+
+}
+
+.sk-circle.small.success {
+  background-color: #0087af;
 }
