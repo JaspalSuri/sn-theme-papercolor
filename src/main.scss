@@ -86,12 +86,9 @@
 
 /* title bar */
 #desktop-title-bar {
-  background-color: #444444 !important;
+  background-color: #005f87 !important;
 }
-.title-bar-left-buttons {
-  color: #eeeeee;
-}
-.title-bar-right-buttons {
+#menu-btn, #min-btn, #max-btn, #close-btn {
   color: #eeeeee;
 }
 
