@@ -1,83 +1,92 @@
 :root {
+  /* *************************************************************************/
+  /* Stylekit variables                                                       /
+  /* *************************************************************************/
   
   /* Color definitions */
-  --background-1: #eeeeee;
-  --background-2: #bcbcbc;
-  --foreground-color-1: #444444;
-  --foreground-color-2: #005f87;
-  --foreground-color-3: #0087af;
-  --border-color: #444444;
-  --highlight-color: #d70087;
-  --highlight-contrast: #444444;
-
+  --white: #eeeeee;
+  --dark-grey: #444444;
+  --dark-red: #af0000;
+  --green: #008700;
+  --light-green: #5f8700;
+  --light-blue: #0087af;
+  --grey: #878787;
+  --dark-blue: #005f87;
+  --grey: #bcbcbc;
+  --red: #d70000;
+  --pink: #d70087;
+  --purple: #8700af;
+  --orange: #d75f00;
+  --blue: #005faf;
+  
   /* Info */
-  --sn-stylekit-info-color: #005f87;
-  --sn-stylekit-info-contrast-color:  #eeeeee;
+  --sn-stylekit-info-color: var(--dark-blue);
+  --sn-stylekit-info-contrast-color: var(--white);
 
-  --sn-stylekit-neutral-color: #0087af;
-  --sn-stylekit-neutral-contrast-color: #eeeeee;
+  --sn-stylekit-neutral-color: var(--light-blue);
+  --sn-stylekit-neutral-contrast-color: var(--white);
 
-  --sn-stylekit-success-color: #008700;
-  --sn-stylekit-success-contrast-color: #eeeeee;
+  --sn-stylekit-success-color: var(--green);
+  --sn-stylekit-success-contrast-color: var(--white);
 
-  --sn-stylekit-warning-color: #d75f00;
-  --sn-stylekit-warning-contrast-color: #eeeeee;
+  --sn-stylekit-warning-color: var(--orange);
+  --sn-stylekit-warning-contrast-color: var(--white);
 
-  --sn-stylekit-danger-color: #af0000;
-  --sn-stylekit-danger-contrast-color: #eeeeee;
+  --sn-stylekit-danger-color: var(--dark-red);
+  --sn-stylekit-danger-contrast-color: var(--white);
 
   /* Backgrounds */
-  --sn-stylekit-background-color: #eeeeee;
-  --sn-stylekit-foreground-color: #444444;
-  --sn-stylekit-contrast-background-color: #bcbcbc;
-  --sn-stylekit-contrast-foreground-color: #444444;
-
-  /* --sn-stylekit-secondary-background-color: var(--background-2);
-  --sn-stylekit-secondary-foreground-color: #000000;
-  --sn-stylekit-secondary-contrast-background-color: #5f8700;
-  --sn-stylekit-secondary-contrast-foreground-color: #eeeeee; */
+  --sn-stylekit-background-color: var(--white);
+  --sn-stylekit-foreground-color: var(--dark-grey);
+  --sn-stylekit-contrast-background-color: var(--grey);
+  --sn-stylekit-contrast-foreground-color: var(--dark-grey);
 
   /* Borders */
-  --sn-stylekit-border-color: #444444;
-  --sn-stylekit-contrast-border-color: #444444;
-  --sn-stylekit-secondary-border-color: #444444;
-  --sn-stylekit-secondary-contrast-border-color: #444444;
+  --sn-stylekit-border-color: var(--dark-grey);
+  --sn-stylekit-contrast-border-color: var(--blue);
+  --sn-stylekit-secondary-border-color: var(--dark-grey);
+  --sn-stylekit-secondary-contrast-border-color: var(--purple);
   
   /* Paragraph */
-  --sn-stylekit-paragraph-text-color: #444444;
+  --sn-stylekit-paragraph-text-color: var(--dark-grey);
 
   /* Shadow */
-  --sn-stylekit-shadow-color: #bcbcbc;
+  --sn-stylekit-shadow-color: var(--grey);
 
   /* Editor */
   --sn-stylekit-editor-background-color: #f2f2f2;
-  --sn-stylekit-editor-foreground-color: #444444;
+  --sn-stylekit-editor-foreground-color: var(--dark-grey);
 
   /* Scrollbar */
-  --sn-stylekit-scrollbar-track-border-color: #878787;
-  --sn-stylekit-scrollbar-thumb-color: #0087af;  
+  --sn-stylekit-scrollbar-track-border-color: var(--grey);
+  --sn-stylekit-scrollbar-thumb-color: var(--light-blue);  
 }
 
+/* **************************************************************************/
+/* Addional customizations                                                   /
+/* **************************************************************************/
 
 /* Notes column */
 .notes {
-  color: #444444;
+  color: var(--dark-grey);
 }
 .note.ng-scope.selected {
-  background-color: #005f87;
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
-.note.ng-scope.selected .name{
-  color: #eeeeee;
+
+/* .note.ng-scope.selected .name{
+  color: var(--white);
 }
 .note.ng-scope.selected .note-preview{
-  color: #eeeeee;
+  color: var(--white);
 }
 .note.ng-scope.selected .date.faded{
-  color: #eeeeee;
+  color: var(--white);
 }
 #notes-column {
-  background-color: #bcbcbc;
-}
+  background-color: var(--grey);
+} */
 
 /* Tags column */
 #tags-column {
@@ -86,13 +95,83 @@
 
 /* title bar */
 #desktop-title-bar {
-  background-color: #005f87 !important;
+  background-color: var(--dark-grey) !important;
 }
 #desktop-title-bar button {
-  color: #eeeeee;
+  color: var(--white);
 }
 
 /* background for append editor */
 #content {
   background-color: #d9d9d9;
 }
+
+/* Fonts */
+pre > code {
+  font-family: "Cascadia Code", monospace !important;
+  font-size: 16px !important;
+}
+
+
+/* Primary Colours */
+.hljs {
+  color: var(--dark-grey);
+  background-color: var(--white);
+}
+
+/* General purpose */
+.hljs-keyword { color: var(--purple); }
+.hljs-built_in { color: var(--pink); }
+.hljs-type { color: var(--blue); }
+.hljs-literal { color: var(--blue); }
+.hljs-number { color: var(--orange); }
+.hljs-operator { color: var(--light-blue); }
+.hljs-punctuation { color: var(); }
+.hljs-regexp { color: var(--blue); }
+.hljs-string { color: var(--light-green); }
+.hljs-subst { color: var(--dark-grey); }
+.hljs-symbol { color: var(--light-blue); }
+.hljs-class { color: var(--dark-blue); }
+.hljs-function { color: var(--light-blue);  }
+.hljs-variable { color: var(--dark-grey); }
+.hljs-title { font-weight: bold; color: var(--pink);}
+.hljs-params { color: var(--pink); }
+.hljs-comment { color: var(--green); }
+.hljs-doctag { color: var(--dark-red); }
+
+/* Meta */
+.hljs-meta { color: var(--pink);  }
+.hljs-meta-keyword { color: var(--light-blue); }
+.hljs-meta-string { color: var(--green); }
+
+/* Tags, attributes, configs */
+.hljs-section { color: var(--dark-grey); }
+.hljs-tag { color: var(--purple); }
+.hljs-name { color: var(--dark-blue); }
+.hljs-builtin-name { color: var(--pink); }
+.hljs-attr { color: var(--blue); }
+.hljs-attribute { color: var(--dark-grey); }
+
+/* Text markup */
+.hljs-bullet { color: var(--dark-grey); }
+.hljs-code { color: var(--dark-grey); }
+.hljs-emphasis { color: var(--dark-grey); font-style: italic; }
+.hljs-strong { color: var(--dark-grey); font-weight: 700; }
+.hljs-formula { color: var(--dark-grey); }
+.hljs-link { color: var(--light-blue); }
+.hljs-quote { color: var(--dark-grey); }
+
+/* CSS */
+.hljs-selector-tag { color: var(--dark-grey); }
+.hljs-selector-id {color: var(--light-blue);  }
+.hljs-selector-class { color: var(--dark-blue); }
+.hljs-selector-attr { color: var(--purple); }
+.hljs-selector-pseudo { color: var(--green); }
+
+/* Template */
+.hljs-template-tag { color: var(--light-blue); }
+.hljs-template-variable { color: var(--dark-blue); }
+
+/* Diff */
+.hljs-addition { color: var(--green); }
+.hljs-deletion { color: var(--dark-red); }
