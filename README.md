@@ -10,3 +10,7 @@
 3. Click 'Install'
 
 4. Activate the theme!
+
+5. If you would like the matching syntax highlighting as shown in the screenshot for the append editor, you can copy and paste the contents from the highlightjs.css file into the "Add custom styles (CSS)" section in the append editor settings.
+
+![screenshot](https://github.com/trystanmortimer/sn-theme-papercolor/raw/master/papercolor-screenshot.png)
