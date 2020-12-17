@@ -75,19 +75,6 @@
   color: var(--white);
 }
 
-/* .note.ng-scope.selected .name{
-  color: var(--white);
-}
-.note.ng-scope.selected .note-preview{
-  color: var(--white);
-}
-.note.ng-scope.selected .date.faded{
-  color: var(--white);
-}
-#notes-column {
-  background-color: var(--grey);
-} */
-
 /* Tags column */
 #tags-column {
   background-color:#d9d9d9;
@@ -106,72 +93,111 @@
   background-color: #d9d9d9;
 }
 
-/* Fonts */
-pre > code {
-  font-family: "Cascadia Code", monospace !important;
-  font-size: 16px !important;
-}
+/* **************************************************************************/
+/* Code Mirror Syntax Highlighting                                           /
+/* **************************************************************************/
+/* BASICS */
 
-
-/* Primary Colours */
-.hljs {
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: "Cascadia Code", monospace;
+  font-size: 16px;
+  height: 300px;
   color: var(--dark-grey);
-  background-color: var(--white);
+  direction: ltr;
 }
 
-/* General purpose */
-.hljs-keyword { color: var(--purple); }
-.hljs-built_in { color: var(--pink); }
-.hljs-type { color: var(--blue); }
-.hljs-literal { color: var(--blue); }
-.hljs-number { color: var(--orange); }
-.hljs-operator { color: var(--light-blue); }
-.hljs-punctuation { color: var(); }
-.hljs-regexp { color: var(--blue); }
-.hljs-string { color: var(--light-green); }
-.hljs-subst { color: var(--dark-grey); }
-.hljs-symbol { color: var(--light-blue); }
-.hljs-class { color: var(--dark-blue); }
-.hljs-function { color: var(--light-blue);  }
-.hljs-variable { color: var(--dark-grey); }
-.hljs-title { font-weight: bold; color: var(--pink);}
-.hljs-params { color: var(--pink); }
-.hljs-comment { color: var(--green); }
-.hljs-doctag { color: var(--dark-red); }
+/* PADDING */
+.CodeMirror-lines {
+  padding: 4px 0; /* Vertical padding around content */
+}
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
+  padding: 0 4px; /* Horizontal padding of content */
+}
 
-/* Meta */
-.hljs-meta { color: var(--pink);  }
-.hljs-meta-keyword { color: var(--light-blue); }
-.hljs-meta-string { color: var(--green); }
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: transparent; /* The little square between H and V scrollbars */
+}
 
-/* Tags, attributes, configs */
-.hljs-section { color: var(--dark-grey); }
-.hljs-tag { color: var(--purple); }
-.hljs-name { color: var(--dark-blue); }
-.hljs-builtin-name { color: var(--pink); }
-.hljs-attr { color: var(--blue); }
-.hljs-attribute { color: var(--dark-grey); }
+/* GUTTER */
+.CodeMirror-gutters {
+  border-right: 1px solid var(--dark-grey);
+  background-color: var(--light-blue);
+  color: var(--white);
+  white-space: nowrap;
+}
+.CodeMirror-linenumbers {}
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+}
 
-/* Text markup */
-.hljs-bullet { color: var(--dark-grey); }
-.hljs-code { color: var(--dark-grey); }
-.hljs-emphasis { color: var(--dark-grey); font-style: italic; }
-.hljs-strong { color: var(--dark-grey); font-weight: 700; }
-.hljs-formula { color: var(--dark-grey); }
-.hljs-link { color: var(--light-blue); }
-.hljs-quote { color: var(--dark-grey); }
+.CodeMirror-guttermarker { color: black; }
+.CodeMirror-guttermarker-subtle { color: #999; }
 
-/* CSS */
-.hljs-selector-tag { color: var(--dark-grey); }
-.hljs-selector-id {color: var(--light-blue);  }
-.hljs-selector-class { color: var(--dark-blue); }
-.hljs-selector-attr { color: var(--purple); }
-.hljs-selector-pseudo { color: var(--green); }
+/* CURSOR */
+.CodeMirror-cursor {
+  border-left: 1px solid black;
+  border-right: none;
+  width: 0;
+}
 
-/* Template */
-.hljs-template-tag { color: var(--light-blue); }
-.hljs-template-variable { color: var(--dark-blue); }
+.CodeMirror-rulers {
+  position: absolute;
+  left: 0; right: 0; top: -50px; bottom: 0;
+  overflow: hidden;
+}
+.CodeMirror-ruler {
+  border-left: 1px solid var(--dark-grey);
+  top: 0; bottom: 0;
+  position: absolute;
+}
 
-/* Diff */
-.hljs-addition { color: var(--green); }
-.hljs-deletion { color: var(--dark-red); }
+/* DEFAULT THEME */
+
+.cm-s-default .cm-header {color: var(--blue);}
+.cm-s-default .cm-quote {color: var( --light-green);}
+.cm-negative {color: var(--red);}
+.cm-positive {color: var(--green);}
+.cm-header, .cm-strong {font-weight: bold;}
+.cm-em {font-style: italic;}
+.cm-link {text-decoration: underline;}
+.cm-strikethrough {text-decoration: line-through;}
+
+.cm-s-default .cm-keyword {color: var(--purple);}
+.cm-s-default .cm-atom {color: var(--dark-blue);}
+.cm-s-default .cm-number {color: var(--orange);}
+.cm-s-default .cm-def {color: var(--pink);}
+.cm-s-default .cm-variable {color: var(--dark-grey);}
+.cm-s-default .cm-punctuation {color: var(--light-blue);}
+.cm-s-default .cm-property,
+.cm-s-default .cm-operator {color: var(--light-blue);}
+.cm-s-default .cm-variable-2 {color: var(--dark-grey);}
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: var(--red);}
+.cm-s-default .cm-comment {color: var(--green);}
+.cm-s-default .cm-string {color: var(--light-green);}
+.cm-s-default .cm-string-2 {color: var(--light-green);}
+.cm-s-default .cm-meta {color: var(--pink);}
+.cm-s-default .cm-qualifier {color: var(--light-blue);}
+.cm-s-default .cm-builtin {color: var(--purple);}
+.cm-s-default .cm-bracket {color: var(--dark-grey);}
+.cm-s-default .cm-tag {color: var(--purple);}
+.cm-s-default .cm-attribute {color:var(--dark-grey);}
+.cm-s-default .cm-hr {color: var(--dark-grey);}
+.cm-s-default .cm-link {color: var(--light-blue);}
+
+.cm-s-default .cm-error {color: var(--dark-red);}
+.cm-invalidchar {color: var(--red);}
+
+.CodeMirror-composing { border-bottom: 2px solid; }
+
+/* Default styles for common addons */
+
+div.CodeMirror span.CodeMirror-matchingbracket {color: var(--dark-blue);}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: var(--dark-red);}
+.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }
+.CodeMirror-activeline-background {background: #d9d9d9;}
