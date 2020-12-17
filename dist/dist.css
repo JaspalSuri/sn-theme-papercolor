@@ -159,8 +159,8 @@
 
 /* DEFAULT THEME */
 
-.cm-s-default .cm-header {color: var(--blue);}
-.cm-s-default .cm-quote {color: var( --light-green);}
+.cm-header {color: var(--blue);}
+.cm-quote {color: var( --light-green);}
 .cm-negative {color: var(--red);}
 .cm-positive {color: var(--green);}
 .cm-header, .cm-strong {font-weight: bold;}
@@ -168,29 +168,28 @@
 .cm-link {text-decoration: underline;}
 .cm-strikethrough {text-decoration: line-through;}
 
-.cm-s-default .cm-keyword {color: var(--purple);}
-.cm-s-default .cm-atom {color: var(--dark-blue);}
-.cm-s-default .cm-number {color: var(--orange);}
-.cm-s-default .cm-def {color: var(--pink);}
-.cm-s-default .cm-variable {color: var(--dark-grey);}
-.cm-s-default .cm-punctuation {color: var(--light-blue);}
-.cm-s-default .cm-property,
-.cm-s-default .cm-operator {color: var(--light-blue);}
-.cm-s-default .cm-variable-2 {color: var(--dark-grey);}
-.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: var(--red);}
-.cm-s-default .cm-comment {color: var(--green);}
-.cm-s-default .cm-string {color: var(--light-green);}
-.cm-s-default .cm-string-2 {color: var(--light-green);}
-.cm-s-default .cm-meta {color: var(--pink);}
-.cm-s-default .cm-qualifier {color: var(--light-blue);}
-.cm-s-default .cm-builtin {color: var(--purple);}
-.cm-s-default .cm-bracket {color: var(--dark-grey);}
-.cm-s-default .cm-tag {color: var(--purple);}
-.cm-s-default .cm-attribute {color:var(--dark-grey);}
-.cm-s-default .cm-hr {color: var(--dark-grey);}
-.cm-s-default .cm-link {color: var(--light-blue);}
-
-.cm-s-default .cm-error {color: var(--dark-red);}
+.cm-keyword {color: var(--purple);}
+.cm-atom {color: var(--dark-blue);}
+.cm-number {color: var(--orange);}
+.cm-def {color: var(--pink);}
+.cm-variable {color: var(--dark-grey);}
+.cm-punctuation {color: var(--light-blue);}
+.cm-property,
+.cm-operator {color: var(--light-blue);}
+.cm-variable-2 {color: var(--dark-grey);}
+.cm-variable-3,  .cm-type {color: var(--red);}
+.cm-comment {color: var(--green);}
+.cm-string {color: var(--light-green);}
+.cm-string-2 {color: var(--light-green);}
+.cm-meta {color: var(--pink);}
+.cm-qualifier {color: var(--light-blue);}
+.cm-builtin {color: var(--purple);}
+.cm-bracket {color: var(--dark-grey);}
+.cm-tag {color: var(--purple);}
+.cm-attribute {color:var(--dark-grey);}
+.cm-hr {color: var(--dark-grey);}
+.cm-link {color: var(--light-blue);}
+.cm-error {color: var(--dark-red);}
 .cm-invalidchar {color: var(--red);}
 
 .CodeMirror-composing { border-bottom: 2px solid; }
